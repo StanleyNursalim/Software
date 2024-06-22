@@ -1,0 +1,174 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logoo {
+    background-image: url('logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    margin-right: 10px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: auto; /* Pushes the logo to the left */
+}
+
+.signin {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: rgb(255, 0, 0);
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.signin:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin-top: 100px;
+    background-color: rgba(197, 176, 176, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.left-panel, .right-panel {
+    width: 50%;
+    padding: 10px;
+}
+
+.Food h1 {
+    padding-top: 550px;
+    margin-right: 800px;
+    font-size: 90px;
+    background: linear-gradient(to bottom, #E4BABA, #7E6767); /* Adjust gradient colors as needed */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    stroke: #000000;
+    stroke-width: 100px;
+}
+
+.upload-section {
+    margin-right: 400px;
+}
+
+.upload-section p {
+    font-size: 18px;
+    color: #333;
+}
+
+.upload-box {
+    border: 2px dashed #ccc;
+    padding: 40px;
+    margin: 20px 0;
+    text-align: center;
+    color: #666;
+}
+
+.upload-button {
+    text-align: center;
+    color: #666;
+}
+
+.upload-button p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.right-panel {
+    background-color: #cdcdcd;
+}
+
+.right-panel h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.examples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.examples img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background-image: url('back.png');
+    transform: skewY(10deg);
+    transform-origin: top right;
+    z-index: -1;
+}
+
+.result-section {
+    margin-top: 20px;
+    color: #333;
+    display: none;
+}
+
+#resultContent h3 {
+    color: #007bff;
+}
+
+#resultContent p {
+    color: #333;
+}

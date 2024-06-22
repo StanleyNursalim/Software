@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriZen - Food Nutrition Scanner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logoo"></div>
+        <div class="logo">NutriZen</div>
+        <div class="signin"></div>
+    </header>
+    <div class="Food">
+        <h1>Food Nutrition<br>Scanner</h1>
+    </div>
+
+    <div class="container">
+        <div class="upload-section">
+            <p>Upload an image</p>
+            <div class="upload-box">
+                <p>Drop a file or select from your computer</p>
+            </div>
+            <div class="upload-button">
+                <p>Or select your files from desktop</p>
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <input type="file" id="fileInput" name="file">
+                    <button type="submit">Upload File</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div style="background-color: rgb(216, 216, 216);">
+                <h2>Examples</h2>
+                <div class="examples">
+                    <img src="{{ url_for('static', filename='sapi.jpg') }}" alt="Example 1">
+                    <img src="{{ url_for('static', filename='nasi.png') }}" alt="Example 2">
+                    <img src="{{ url_for('static', filename='pisang.jpg') }}" alt="Example 3">
+                    <img src="{{ url_for('static', filename='strob.jpg') }}" alt="Example 4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="resultSection" class="result-section">
+        <h2>Result</h2>
+        <div id="resultContent"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
